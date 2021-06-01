@@ -23,7 +23,7 @@ namespace DSED_03_Hangman
         ImageView imgGameOverFruit;
         TextView tvScore;
         TextView tvGOCurrentUser;
-        string Name;
+        
 
 
 
