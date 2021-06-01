@@ -80,7 +80,7 @@ namespace DSED_03_Hangman
 
             tvWord = FindViewById<TextView>(Resource.Id.tvWord);
 
-            
+
             btnA = FindViewById<Button>(Resource.Id.btnA);
             btnB = FindViewById<Button>(Resource.Id.btnB);
             btnC = FindViewById<Button>(Resource.Id.btnC);
@@ -142,7 +142,7 @@ namespace DSED_03_Hangman
             LoadWord();
             EnableButtons();
             btnPlay.Enabled = false;
-            
+
         }
 
         private void AllButton_Click(object sender, EventArgs e)
@@ -190,8 +190,8 @@ namespace DSED_03_Hangman
             }
 
             else // if no letter in the word then move on to next
-                {
-    
+            {
+
                 wrongLetter++;
                 switch (wrongLetter)
                 {
@@ -235,7 +235,7 @@ namespace DSED_03_Hangman
         {
             if (ChosenWordArray.SequenceEqual(ChosenWordUnderScoreArray))
             {
-                User.Score ++;
+                User.Score++;
                 txtScore.Text = "Score: " + User.Score;
                 btnPlay.Enabled = true;
                 btnPlay.Text = "Next Fruit";
